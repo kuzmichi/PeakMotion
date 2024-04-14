@@ -569,27 +569,28 @@ body {
 .about-banner {
   position: relative;
   padding-top: 50px;
+  padding-left: 100px;
   margin-block-end: 10px;
   width: 550px;
   height: 560px;
   background-color: var(--beige);
-}
-
-.about-banner p {
-  text-align: left;
-
-}
-
-.about-content p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .about-banner img {
   border-radius: 5%;
   width: 350px;
   height: 90%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .about-content {
@@ -613,15 +614,18 @@ body {
 @media screen and (max-width: 767px) {
   .about-content {
     width: calc(100% - 80px);
-    /* уменьшаем ширину на величину внешних отступов */
     position: relative;
-    /* убираем фиксированную позицию */
     margin: 0 auto;
-    /* центрируем по горизонтали */
     padding: 20px;
-    /* уменьшаем внутренние отступы */
     max-height: calc(100vh - 120px);
-    /* ограничиваем максимальную высоту, чтобы текст не вылезал за пределы экрана */
+  }
+
+  .about-banner {
+    padding-left: 25px;
+  }
+
+  .about-banner img {
+    width: 300px;
   }
 }
 
