@@ -111,8 +111,7 @@ a,
 img,
 span,
 input,
-button,
-ion-icon {
+button {
   display: block;
 }
 
@@ -133,10 +132,6 @@ input {
 
 button {
   cursor: pointer;
-}
-
-ion-icon {
-  pointer-events: none;
 }
 
 address {
@@ -353,6 +348,15 @@ body {
   transition: var(--transition-1);
 }
 
+.header .btn {
+  margin-inline-start: auto;
+}
+
+.nav-toggle-btn {
+  font-size: 40px;
+  color: var(--black-chocolate);
+}
+
 .header.active {
   box-shadow: var(--shadow-2);
 }
@@ -364,26 +368,16 @@ body {
   gap: 15px;
 }
 
-.logo {
-  color: var(--black-chocolate);
-  font-size: 30px;
-  line-height: 1;
-  font-weight: var(--fw-700);
-}
-
 .logo .span {
   display: inline-block;
-  color: var(--orange-web);
+  color: var(--peach);
 }
 
 .header .btn {
   margin-inline-start: auto;
 }
 
-.nav-toggle-btn {
-  font-size: 40px;
-  color: var(--white);
-}
+
 
 .navbar {
   position: fixed;
@@ -404,20 +398,12 @@ body {
   transition: 0.5s var(--cubic-out);
 }
 
-.navbar .nav-toggle-btn {
-  font-size: 35px;
-  position: absolute;
-  top: 25px;
-  right: 20px;
-}
 
-.navbar .nav-toggle-btn ion-icon {
-  --ionicon-stroke-width: 25px;
-}
+
 
 .navbar-list {
   margin-block-start: 110px;
-  border-block-end: 1px solid var(--blue-green-color-wheel_10);
+  border-block-end: 1px solid var(--white);
 }
 
 .navbar-item {
@@ -584,34 +570,36 @@ body {
   position: relative;
   padding-top: 50px;
   margin-block-end: 10px;
-  width: 380px;
+  width: 550px;
   height: 560px;
   background-color: var(--beige);
 }
 
 .about-banner p {
-  text-align: right;
-  background-color: var(--beige);
+  text-align: left;
+
 }
 
 .about-content p {
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 
 .about-banner img {
   border-radius: 5%;
-  width: 380px;
+  width: 350px;
   height: 90%;
 }
 
 .about-content {
   position: relative;
   background-color: var(--white);
-  width: 590px;
+  width: 450px;
   height: 600px;
   padding: 40px;
   z-index: 1;
+  overflow-y: auto;
 }
 
 .about :is(.section-subtitle, .section-title) {
@@ -622,6 +610,20 @@ body {
   margin-block-end: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-content {
+    width: calc(100% - 80px);
+    /* уменьшаем ширину на величину внешних отступов */
+    position: relative;
+    /* убираем фиксированную позицию */
+    margin: 0 auto;
+    /* центрируем по горизонтали */
+    padding: 20px;
+    /* уменьшаем внутренние отступы */
+    max-height: calc(100vh - 120px);
+    /* ограничиваем максимальную высоту, чтобы текст не вылезал за пределы экрана */
+  }
+}
 
 
 
@@ -1260,10 +1262,6 @@ body {
    * ABOUT
    */
 
-  .about-content {
-    padding: 100px 80px;
-  }
-
   .about .section-title {
     --fs-2: 5.7rem;
   }
@@ -1425,7 +1423,7 @@ body {
 
   .about .container {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 50px;
   }
