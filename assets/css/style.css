@@ -2,12 +2,12 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
 
+@font-face {
+  font-family: FuturaBookC;
+  src: url(assets\Fonts\FuturaBookC.ttf);
 
-
+}
 
 
 /*-----------------------------------*\
@@ -34,8 +34,8 @@
    * typography
    */
 
-  --ff-montserrat: 'Montserrat', sans-serif;
-  --ff-playfair: 'Playfair Display', serif;
+  --ff-montserrat: 'Montserrat', medium;
+  --ff-futurabookc: 'FururaBookC' medium;
 
   --fs-1: 3.6rem;
   --fs-2: 2.4rem;
@@ -211,7 +211,7 @@ body {
 .h2,
 .h3 {
   color: var(--black-chocolate);
-  font-family: var(--ff-playfair);
+  ;
   line-height: 1.1;
 }
 
@@ -491,15 +491,14 @@ body {
 .hero .social-link {
   font-size: 14px;
   padding: 5px;
-  border: 1px solid var(--blue-green-color-wheel_10);
+  border: 1px solid transparent;
   border-radius: 30%;
   transition: var(--transition-1);
 }
 
 .hero .social-link:is(:hover, :focus) {
-  background-color: var(--blue-green-color-wheel);
-  border-color: var(--blue-green-color-wheel);
-  color: var(--white);
+  border-color: var(--peach);
+
 }
 
 
@@ -1099,7 +1098,7 @@ body {
   }
 
   .hero .social-link {
-    padding: 15px;
+    padding: 5px;
   }
 
 
