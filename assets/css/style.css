@@ -808,7 +808,7 @@ body {
 
 .app-card {
   position: relative;
-  background-color: var(--orange-web);
+  background-color: var(--peach);
   padding: 30px;
   border-radius: var(--radius-2);
   text-align: center;
@@ -882,7 +882,7 @@ body {
 \*-----------------------------------*/
 
 .footer-top {
-  background-color: var(--blue-green-color-wheel);
+  background-color: var(--brown);
   color: var(--white);
 }
 
@@ -920,7 +920,7 @@ body {
 }
 
 .footer-top .btn-secondary:is(:hover, :focus) {
-  background-color: var(--white);
+  background-color: var(--gray);
   color: var(--onyx);
 }
 
@@ -937,11 +937,11 @@ body {
 
 .footer-link:is(:hover, :focus),
 .footer-bottom-link:is(:hover, :focus) {
-  color: var(--orange-web);
+  color: var(--peach);
 }
 
 .footer-bottom {
-  background-color: var(--msu-green);
+  background-color: var(--gray);
   color: var(--white);
   font-size: var(--fs-5);
   text-align: center;
@@ -954,7 +954,7 @@ body {
 
 .copyright :is(.copyright-link, ion-icon) {
   display: inline-block;
-  color: var(--orange-web);
+  color: var(--peach);
 }
 
 .copyright ion-icon {
@@ -1000,8 +1000,6 @@ body {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--orange-web);
-  color: var(--white);
   font-size: 20px;
   padding: 10px;
   border-radius: 50%;
@@ -1012,9 +1010,14 @@ body {
   z-index: 4;
 }
 
-.back-top-btn:is(:hover, :focus) {
-  background-color: var(--onyx);
+.back-top-btn:hover {
+  background-color: var(--peach);
 }
+
+.back-top-btn img {
+  width: 25px;
+}
+
 
 .back-top-btn.active {
   visibility: visible;
@@ -1487,6 +1490,7 @@ body {
   }
 
   .footer-list-title {
+    color: var(--peach);
     --fs-4: 2.4rem;
   }
 
