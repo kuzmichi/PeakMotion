@@ -539,6 +539,15 @@ body {
   color: var(--beige);
 }
 
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  color: var(--beige);
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .service-card .card-title {
   transition: var(--transition-1);
 }
@@ -647,14 +656,16 @@ body {
 }
 
 .section-subtitle {
-  font-size: 18px;
-  color: #333;
+  font-size: 30px;
+  color: var(--white);
+  font-weight: 600;
 }
 
 .section-title {
   font-size: 36px;
-  color: #000;
+  color: var(--white);
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .grid-list {
@@ -693,19 +704,32 @@ body {
 
 .card-link {
   text-decoration: none;
+  color: var(--white);
+}
+
+.card-link:hover {
   color: #555;
 }
 
-.card-title {
+.card-link span {
+  color: var(--white)
+}
+
+.card-content p {
+  color: var(--white)
+}
+
+.course .card-title {
+  text-align: center;
   font-size: 24px;
-  color: #333;
+  color: var(--white);
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .card-title:hover {
-  color: #007bff;
+  color: var(--peach);
 }
 
 
@@ -726,9 +750,7 @@ body {
 
 .blog {
   background-color: #FFA692;
-
 }
-
 
 .blog-card {
   background-color: #CC7F6D;
@@ -782,6 +804,10 @@ body {
 .blog-card .card-link {
   font-weight: var(--fw-700);
   margin-block-end: 10px;
+}
+
+.blog .card-link {
+  color: #000
 }
 
 .blog-card:is(:hover, :focus-within) .card-link {
