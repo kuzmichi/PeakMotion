@@ -111,7 +111,7 @@ a {
 
 .login_box {
     width: 400px;
-    height: 450px;
+    height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,8 +124,9 @@ a {
 }
 
 .button {
-    margin-left: -22px;
-    margin-top: -30px;
+    text-align: center;
+    margin-top: -50px;
+
 }
 
 .top_link a {
@@ -151,10 +152,7 @@ a {
 
 }
 
-.contact a {
-    margin-top: 210px;
-    margin-left: 175px;
-}
+
 
 .left input {
     border: none;
@@ -187,4 +185,37 @@ input:invalid {
 
 ::placeholder {
     color: var(--white)
+}
+
+@media only screen and (max-width: 600px) {
+    .login_box {
+        width: 90%;
+        /* Adjust width to fit smaller screens */
+        height: 55%;
+        /* Allow height to adjust based on content */
+        max-width: 400px;
+        /* Set maximum width for better readability */
+        margin: 10% auto;
+        /* Center the box vertically and horizontally */
+    }
+
+    .left input {
+        width: 80%;
+        /* Make input fields full width */
+        margin-left: 22px;
+        /* Add some space between input fields */
+    }
+
+    .contact a {
+        margin-top: 20px;
+        /* Adjust margin for the link */
+        margin-left: 0;
+        /* Center the link */
+    }
+
+    .button {
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
 }
