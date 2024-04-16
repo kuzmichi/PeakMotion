@@ -601,6 +601,11 @@ body {
   text-align: left;
 }
 
+.about-content p {
+  color: #000
+}
+
+
 .about-content {
   position: relative;
   background-color: var(--white);
@@ -617,6 +622,7 @@ body {
 
 .about .section-title {
   margin-block-end: 20px;
+  color: #000
 }
 
 @media screen and (max-width: 767px) {
