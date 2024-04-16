@@ -124,7 +124,8 @@ a {
 }
 
 .button {
-    margin-left: -35px;
+    text-align: center;
+
     margin-top: -50px;
 }
 
@@ -151,10 +152,6 @@ a {
 
 }
 
-.contact a {
-    margin-top: 210px;
-    margin-left: 175px;
-}
 
 .left input {
     border: none;
@@ -217,7 +214,7 @@ input:invalid {
     }
 
     .button {
-        margin-left: 58px;
+        text-align: center;
         margin-top: -50px;
     }
 }
