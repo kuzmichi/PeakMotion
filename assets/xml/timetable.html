@@ -5,29 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расписание занятий</title>
+    <link rel="stylesheet" href="../css/style4.0.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        /* Стили для отображения расписания */
-        .day {
-            margin-bottom: 20px;
-        }
-
-        .event {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 
 <body>
     <h1>Расписание занятий</h1>
-    <div id="schedule-container"></div>
+    <div class="schedule-container" id="schedule-container"></div>
 
     <script>
         // Функция для загрузки и отображения расписания
         $(document).ready(function () {
             $.ajax({
                 type: "GET",
-                url: "timetable.xml", // Путь к вашему XML-файлу
+                url: "timetable.xml",
                 dataType: "xml",
                 success: function (xml) {
                     $(xml).find('day').each(function () {
@@ -37,7 +28,7 @@
                             var time = $(this).find('time').text();
                             var course = $(this).find('course').text();
                             var instructor = $(this).find('instructor').text();
-                            daySchedule += '<div class="event"><strong>' + time + '</strong>: ' + course + ' (' + instructor + ')</div>';
+                            daySchedule += '<div class="event"><strong>' + time + '</strong>:' + '<p>' + course + '(' + instructor + ')</p></div>';
                         });
                         daySchedule += '</div>';
                         $('#schedule-container').append(daySchedule);
