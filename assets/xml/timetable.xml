@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schedule>
+    <day name="Понедельник">
+        <event>
+            <time>09:20-10:40</time>
+            <course>Бокс</course>
+            <instructor>Гринев Евгений Александрович</instructor>
+        </event>
+        <event>
+            <time>11:00-12:20</time>
+            <course>Самбо</course>
+            <instructor>Щекутков Александр Юрьевич</instructor>
+        </event>
+        <event>
+            <time>12:40-13:00</time>
+            <course>BJJ</course>
+            <instructor>Бородич Вячеслав Михайлович</instructor>
+        </event>
+        <event>
+            <time>13:20-14:40</time>
+            <course>Дзюдо</course>
+            <instructor>Свояк Богдан Николаевич</instructor>
+        </event>
+        <event>
+            <time>17:00-18:20</time>
+            <course>Дзюдо(младшая группа)</course>
+            <instructor>Свояк Богдан Николаевич</instructor>
+        </event>
+        <event>
+            <time>18:20-19:40</time>
+            <course>Тайский Бокс</course>
+            <instructor>Воронович Дмитрий Алексеевич</instructor>
+        </event>
+    </day>
+    <day name="Вторник">
+        <event>
+            <time>11:00-12:20</time>
+            <course>Мужская тренировка(силовая)</course>
+            <instructor>Алексей Смирнов</instructor>
+        </event>
+        <event>
+            <time>12:40-15:00</time>
+            <course>Женская тренировка(гимнастика)</course>
+            <instructor>Алексей Смирнов</instructor>
+        </event>
+            <event>
+            <time>15:20-16:40</time>
+            <course>Общая тренировка</course>
+            <instructor>Алексей Смирнов</instructor>
+        </event>
+    </day>
+    <day name="Четверг">
+        <event>
+            <time>11:00-12:20</time>
+            <course>MMA</course>
+            <instructor>Воронович Дмитрий Александрович</instructor>
+        </event>
+        <event>
+            <time>17:00-18:20</time>
+            <course>Мужская тренировка(силовая)</course>
+            <instructor>Алексей Смирнов</instructor>
+        </event>
+        <event>
+            <time>18:40-20:00</time>
+            <course>Женская тренировка(гимнастика)</course>
+            <instructor>Алексей Смирнов</instructor>
+        </event>
+    </day>
+
+    <day name="Пятница">
+        <event>
+            <time>17:00</time>
+            <course>Общая силовая тренировка</course>
+            <instructor>Вершина Анастасия</instructor>
+            <instructor>Филипов Николай</instructor>
+        </event>
+    </day>
+
+</schedule>
