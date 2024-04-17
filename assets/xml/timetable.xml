@@ -42,12 +42,12 @@
         <event>
             <time>12:40-15:00(Гимастический Зал)</time>
             <course>Женская тренировка(гимнастика)</course>
-            <instructor>Алексей Смирнов</instructor>
+            <instructor>Вершина Анастасия Дмитриевна</instructor>
         </event>
             <event>
             <time>15:20-16:40(Тренажерная)</time>
             <course>Общая тренировка</course>
-            <instructor>Алексей Смирнов</instructor>
+            <instructor>Вершина Анастасия Дмитриевна</instructor>
         </event>
     </day>
     <day name="Среда">
@@ -81,7 +81,7 @@
         <event>
             <time>18:40-20:00(Гимнастический Зал)</time>
             <course>Женская тренировка(гимнастика)</course>
-            <instructor>Вершина Анастасия</instructor>
+            <instructor>Вершина Анастасия Дмитриевна</instructor>
         </event>
     </day>
 
@@ -114,7 +114,7 @@
         <event>
             <time>17:00-19:00(Тренажерная/Гимастический)</time>
             <course>Общая силовая тренировка</course>
-            <instructor>Вершина Анастасия</instructor>
+            <instructor>Вершина Анастасия Дмитриевна/Кез Алина Олеговна</instructor>
         </event>
         <event>
             <time>18:20-19:40(1-ый Зал)</time>
