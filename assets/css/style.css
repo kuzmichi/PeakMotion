@@ -20,7 +20,7 @@
    * colors
    */
 
-  --light-gray: #cccccc;
+  --light-gray: #5f504f;
   --white_15: #ffffff26;
   --white: #ffffff;
   --brown: #714A3A;
@@ -451,7 +451,7 @@ body {
 }
 
 .hero-subtitle {
-  color: var(--gray);
+  color: var(--light-gray);
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
   text-transform: uppercase;
@@ -460,11 +460,11 @@ body {
 
 .hero-title {
   margin-block: 16px 30px;
-  color: var(--gray)
+  color: var(--light-gray)
 }
 
 .hero-text {
-  color: var(--gray);
+  color: var(--light-gray);
   font-weight: var(--fw-600);
 }
 
@@ -743,6 +743,10 @@ body {
 @media (max-width: 767px) {
   .grid-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .card-content {
+    margin: 5px 20px 20px 20px;
   }
 }
 
