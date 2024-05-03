@@ -494,7 +494,11 @@ body {
 }
 
 
-
+@media (max-width: 767px) {
+  .hero .container {
+    margin-top: 110px;
+  }
+}
 
 
 /*-----------------------------------*\
@@ -731,7 +735,6 @@ body {
 }
 
 
-/* Медиа-запрос для адаптивности */
 @media (max-width: 767px) {
   .grid-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
