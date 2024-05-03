@@ -11,12 +11,17 @@
 </head>
 
 <body>
+
     <h1>Расписание занятий</h1>
     <h2>Занятия проходят по адрессу: Беларусь, Минск, улица Свердлова, 13А</h2>
-    <div class="schedule-container" id="schedule-container"></div>
+    <div class="schedule-container" id="schedule-container">
+        <div class="head">
+            <div class="top_link"><a href="../../index.html">На главную</a></div>
+            <div class="logo"><img src="../images/Logo.svg"></div>
+        </div>
+    </div>
 
     <script>
-        // Функция для загрузки и отображения расписания
         $(document).ready(function () {
             $.ajax({
                 type: "GET",
