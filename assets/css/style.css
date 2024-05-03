@@ -432,10 +432,13 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  padding-block: 130px 80px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 25%;
+}
+
+.hero .container {
+  margin-top: -70px;
+  margin-bottom: 10vh;
 }
 
 .hero-subtitle {
@@ -447,7 +450,7 @@ body {
 }
 
 .hero-title {
-  margin-block: 16px 30px;
+  margin-block: 1vh 1vh;
   color: var(--light-gray)
 }
 
@@ -470,6 +473,7 @@ body {
   color: var(--gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
+
 }
 
 .hero .img-link {
@@ -1114,7 +1118,7 @@ body {
   }
 
   .hero .btn {
-    margin-block: 25px 80px;
+    margin-block: 25px 50px;
   }
 
   .hero .social-title {
@@ -1602,8 +1606,10 @@ body {
 
   .hero {
     padding-block: 200px 100px;
-    background-position: 35%;
+    background-position: 1%;
   }
+
+
 
 
 
