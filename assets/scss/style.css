@@ -1,0 +1,76 @@
+body {
+  font-family: "Montserrat", medium;
+  margin: 0;
+  padding: 0;
+  background-color: #EBBFB5;
+  text-align: center;
+}
+
+.head .logo img {
+  width: 100px;
+}
+
+.head {
+  margin-left: 5px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_link a {
+  font-family: "Montserrat", medium;
+  font-size: 1.3rem;
+  color: #EBBFB5;
+  text-decoration: none;
+}
+
+.top_link a:hover {
+  color: #F0775B;
+  transition: 0.25s ease;
+}
+
+h1,
+h2 {
+  color: #453B3A;
+}
+
+.schedule-container {
+  width: 60%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #714A3A;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px hsla(215, 20%, 16%, 0.15);
+  padding: 20px;
+}
+
+.schedule-container .day {
+  border-radius: 5px;
+  background-color: #B7755D;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.schedule-container .event {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.schedule-container .event strong {
+  color: #453B3A;
+}
+
+.schedule-container .event p {
+  color: #EBBFB5;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .schedule-container {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
